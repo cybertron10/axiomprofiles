@@ -1,0 +1,4 @@
+[{
+  "command":"/home/op/go/bin/getJS --input input --complete --resolve --verbose --output output",
+  "ext":""
+}]
