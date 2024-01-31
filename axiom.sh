@@ -25,7 +25,7 @@ axiom-scan rootdomains.txt -m subfinder -o subfinder.txt
 axiom-scan rootdomains.txt -m ctfr -o ctfr.txt
 #axiom-scan rootdomains.txt -m amass -o amass.txt
 
-chaos -key f286eddccad5d2001cf46b5485371cdd65b0e0e1da5a774cee0bba0378d741f2 -dL rootdomains.txt -o chaos.txt
+chaos -key chaos_api_key -dL rootdomains.txt -o chaos.txt
 #bbrf scope in --all | grep -v "*" | anew bbrf.txt
 cat assetfinder.txt ctfr.txt findomain.txt subfinder.txt chaos.txt | grep -v "cust.swisscom.ch\|alibaba.com" | anew subdomain.txt
 rm assetfinder.txt ctfr.txt findomain.txt subfinder.txt chaos.txt 
